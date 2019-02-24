@@ -75,20 +75,29 @@ app.get("/login", router.showLogin);
 app.post("/doLogin", router.doLogin);
 
 //分类文章
-//javascript!
-app.get("/JavaScript",router.showJavaScript);
-app.post("/getJavaScript", router.getJavaScript);
-//javascript
+//C/C++
+app.get("/CAndCpp", router.showCAndCpp);
+app.post("/getCAndCpp", router.getCAndCpp);
 
-//NodeJS!
-app.get("/NodeJS",router.showNodeJS);
-app.post("/getNodeJS", router.getNodeJS);
-//NodeJS
+//JackOS
+app.get("/JackOS", router.showJackOS);
+app.post("/getJackOS", router.getJackOS);
 
-//Environment!
-app.get("/Environment", router.showEnvironment);
-app.post("/getEnvironment", router.getEnvironment);
-//Environment
+//CSharp
+app.get("/CSharp", router.showCSharp);
+app.post("/getCSharp", router.getCSharp);
+
+//Unity3D
+app.get("/Unity3D", router.showUnity3D);
+app.post("/getUnity3D", router.getUnity3D);
+
+//CodeWorld
+app.get("/CodeWorld", router.showCodeWorld);
+app.post("/getCodeWorld", router.getCodeWorld);
+
+//PersonalLife
+app.get("/PersonalLife", router.showPersonalLife);
+app.post("/getPersonalLife", router.getPersonalLife);
 
 //About!
 app.get("/About", router.showAbout);
@@ -123,8 +132,6 @@ app.post("/addVisitorNum", router.addVisitorNum);
 app.post("/addThumbsUp", router.addThumbsUp);
 
 console.log("Server running");
-
-
 
 
 

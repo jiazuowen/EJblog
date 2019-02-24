@@ -238,53 +238,161 @@ exports.delUserdata = function (req, res, result) {
 //访问用户数据
 //后台页面
 
-//JavaScript!
-exports.showJavaScript = function (req, res, result) {
-    res.render("JavaScript");
+/* C/C++ */
+exports.showCAndCpp = function (req, res, result) {
+    res.render("CAndCpp");
 };
-
-exports.getJavaScript = function (req, res, next) {
-    db.find("article",{"classify":"JavaScript"},{"pageamount":10,"sort":{"date":-1}}, function (err, result) {
-        if(err){
-            console.log(err);
+exports.getCAndCpp = function (req, res, result) {
+    db.find("article", 
+        {"classify":"CAndCpp"},
+        {"pageamount":10,"sort":{"date":-1}},
+        function (err, result) {
+            if (err) {
+                console.log(err);
+            }
+            var obj = {"allResult" : result};
+            res.json(obj);
         }
-        var obj = {"allResult" : result};
-        res.json(obj);
-    });
-};
-//JavaScript
-
-//NodeJS!
-exports.showNodeJS = function (req, res, result) {
-    res.render("NodeJS");
+    );
 };
 
-exports.getNodeJS = function (req, res, next) {
-    db.find("article",{"classify":"NodeJS"},{"pageamount":10,"sort":{"date":-1}}, function (err, result) {
-        if(err){
-            console.log(err);
+/* JackOS */
+exports.showJackOS = function (req, res, result) {
+    res.render("JackOS");
+};
+exports.getJackOS = function (req, res, result) {
+    db.find("article", 
+        {"classify":"JackOS"},
+        {"pageamount":10,"sort":{"date":-1}},
+        function (err, result) {
+            if (err) {
+                console.log(err);
+            }
+            var obj = {"allResult" : result};
+            res.json(obj);
         }
-        var obj = {"allResult" : result};
-        res.json(obj);
-    });
-};
-//NodeJS
-
-//Environment!
-exports.showEnvironment = function (req, res, result) {
-    res.render("Environment");
+    );
 };
 
-exports.getEnvironment = function (req, res, next) {
-    db.find("article",{"classify":"Environment"},{"pageamount":10,"sort":{"date":-1}}, function (err, result) {
-        if(err){
-            console.log(err);
+/* CSharp */
+exports.showCSharp = function (req, res, result) {
+    res.render("CSharp");
+};
+exports.getCSharp = function (req, res, result) {
+    db.find("article", 
+        {"classify":"CSharp"},
+        {"pageamount":10,"sort":{"date":-1}},
+        function (err, result) {
+            if (err) {
+                console.log(err);
+            }
+            var obj = {"allResult" : result};
+            res.json(obj);
         }
-        var obj = {"allResult" : result};
-        res.json(obj);
-    });
+    );
 };
-//Environment
+
+/* Unity3D */
+exports.showUnity3D = function (req, res, result) {
+    res.render("Unity3D");
+};
+exports.getUnity3D = function (req, res, result) {
+    db.find("article", 
+        {"classify":"Unity3D"},
+        {"pageamount":10,"sort":{"date":-1}},
+        function (err, result) {
+            if (err) {
+                console.log(err);
+            }
+            var obj = {"allResult" : result};
+            res.json(obj);
+        }
+    );
+};
+
+/* CodeWorld */
+exports.showCodeWorld = function (req, res, result) {
+    res.render("CodeWorld");
+};
+exports.getCodeWorld = function (req, res, result) {
+    db.find("article", 
+        {"classify":"CodeWorld"},
+        {"pageamount":10,"sort":{"date":-1}},
+        function (err, result) {
+            if (err) {
+                console.log(err);
+            }
+            var obj = {"allResult" : result};
+            res.json(obj);
+        }
+    );
+};
+
+/* PersonalLife */
+exports.showPersonalLife = function (req, res, result) {
+    res.render("PersonalLife");
+};
+exports.getPersonalLife = function (req, res, result) {
+    db.find("article", 
+        {"classify":"PersonalLife"},
+        {"pageamount":10,"sort":{"date":-1}},
+        function (err, result) {
+            if (err) {
+                console.log(err);
+            }
+            var obj = {"allResult" : result};
+            res.json(obj);
+        }
+    );
+};
+
+// //JavaScript!
+// exports.showJavaScript = function (req, res, result) {
+//     res.render("JavaScript");
+// };
+
+// exports.getJavaScript = function (req, res, next) {
+//     db.find("article",{"classify":"JavaScript"},{"pageamount":10,"sort":{"date":-1}}, function (err, result) {
+//         if(err){
+//             console.log(err);
+//         }
+//         var obj = {"allResult" : result};
+//         res.json(obj);
+//     });
+// };
+// //JavaScript
+
+// //NodeJS!
+// exports.showNodeJS = function (req, res, result) {
+//     res.render("NodeJS");
+// };
+
+// exports.getNodeJS = function (req, res, next) {
+//     db.find("article",{"classify":"NodeJS"},{"pageamount":10,"sort":{"date":-1}}, function (err, result) {
+//         if(err){
+//             console.log(err);
+//         }
+//         var obj = {"allResult" : result};
+//         res.json(obj);
+//     });
+// };
+// //NodeJS
+
+// //Environment!
+// exports.showEnvironment = function (req, res, result) {
+//     res.render("Environment");
+// };
+
+// exports.getEnvironment = function (req, res, next) {
+//     db.find("article",{"classify":"Environment"},{"pageamount":10,"sort":{"date":-1}}, function (err, result) {
+//         if(err){
+//             console.log(err);
+//         }
+//         var obj = {"allResult" : result};
+//         res.json(obj);
+//     });
+// };
+// //Environment
 
 //About!
 exports.showAbout = function (req, res ,result) {

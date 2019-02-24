@@ -1,0 +1,5 @@
+# 剔除的文件夹
+node_modules
+
+# 剔除的文件
+package-lock.json
