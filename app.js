@@ -71,7 +71,7 @@ app.get("/register", router.showRegister);
 app.post("/doRegister",router.doRegister);
 
 //登陆页面
-app.get("/login", router.showLogin);
+app.get("/hahalogin", router.showLogin);
 app.post("/doLogin", router.doLogin);
 
 //分类文章
@@ -135,4 +135,4 @@ console.log("Server running");
 
 
 
-app.listen(3000);
+app.listen(80);
