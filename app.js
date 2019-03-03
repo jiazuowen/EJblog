@@ -66,12 +66,12 @@ app.get("/article", router.showArticle);
 //删除文章
 app.post("/delArticle", router.delArticle);
 
-//注册页面
-app.get("/register", router.showRegister);
-app.post("/doRegister",router.doRegister);
+// //注册页面
+// app.get("/register", router.showRegister);
+// app.post("/doRegister",router.doRegister);
 
 //登陆页面
-app.get("/hahalogin", router.showLogin);
+app.get("/login", router.showLogin);
 app.post("/doLogin", router.doLogin);
 
 //分类文章
